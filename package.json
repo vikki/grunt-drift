@@ -4,7 +4,9 @@
   "description": "Grab Strength =====",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +15,9 @@
     "socket.io": "~1.3.3"
   },
   "dependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-connect": "~0.9.0"
-  }
+    "grunt": "~1.5.3",
+    "grunt-contrib-connect": "~0.11.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
